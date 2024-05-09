@@ -4,30 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d019922-fd35-49f3-8add-f4f4d1d078c0" name="Changes" comment="" />
+    <list default="true" id="4d019922-fd35-49f3-8add-f4f4d1d078c0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/scripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/scripts/gen_csv_from_xml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/scripts/gen_piechart_from_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "isaacmaffeis"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;isaacmaffeis&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/isaacmaffeis/checkstyle_python_pie_chart.git",
+    "url": "https://github.com/isaacmaffeis/checkstyle-python-pie-chart.git",
     "accountId": "239aa22d-51f9-43a2-bd28-d43abff7dea8"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2gFSSUPcmHp2IUs81y9CEqHPIG1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,9 +52,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "isaac",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/isaac/Documents/GitHub/checkstyle_python_pie_chart"
+    "last_opened_file_path": "C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart/checkstyle_python_pie_chart"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\checkstyle_python_pie_chart" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
