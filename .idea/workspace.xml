@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d019922-fd35-49f3-8add-f4f4d1d078c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/scripts/gen_csv_from_xml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/scripts/gen_piechart_from_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle_python_pie_chart/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +28,12 @@
     &quot;assignee&quot;: &quot;isaacmaffeis&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/isaacmaffeis/checkstyle-python-pie-chart.git",
-    "accountId": "239aa22d-51f9-43a2-bd28-d43abff7dea8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/isaacmaffeis/checkstyle-python-pie-chart.git&quot;,
+    &quot;accountId&quot;: &quot;239aa22d-51f9-43a2-bd28-d43abff7dea8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -52,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "isaac",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart/checkstyle_python_pie_chart"
+    "last_opened_file_path": "C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart"
   }
 }]]></component>
   <component name="RecentsManager">
