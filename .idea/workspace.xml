@@ -42,19 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "isaac",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;isaac&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\checkstyle_python_pie_chart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\src\scripts" />
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\src" />
       <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart" />
     </key>
   </component>
