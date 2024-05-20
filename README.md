@@ -16,3 +16,6 @@ Then run the following to start the script:
   python main.py
   ```
 Csv files and png images will be saved in ```target/output```.
+
+### example:
+![Checkstyle-charts](https://github.com/isaacmaffeis/checkstyle-python-pie-chart/assets/28917454/0fe5cd9f-fe03-4bae-b11e-00c7801ea229)
