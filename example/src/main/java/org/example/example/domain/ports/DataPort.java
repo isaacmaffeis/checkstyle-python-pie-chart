@@ -1,7 +1,10 @@
 package org.example.example.domain.ports;
 
+import java.util.Optional;
 import org.example.example.domain.entities.CustomerEntity;
 import org.example.example.domain.entities.OrderEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 /**
  * Interface for data access operations.
@@ -12,27 +15,17 @@ import org.example.example.domain.entities.OrderEntity;
  */
 public interface DataPort {
 
-  /**
-   * Saves a customer entity.
-   *
-   * @param customerEntity the customer entity to be saved
-   * @return the saved CustomerEntity
-   */
-  CustomerEntity saveCustomer(CustomerEntity customerEntity);
+  Optional<CustomerEntity> saveCustomer(CustomerEntity customerEntity);
 
-  /**
-   * Adds an order entity.
-   *
-   * @param orderEntity the order entity to be added
-   * @return the added OrderEntity
-   */
-  OrderEntity addOrder(OrderEntity orderEntity);
+  boolean customerIsExists(int customerId);
 
-  /**
-   * Retrieves the status of an order.
-   *
-   * @return the order status as an integer
-   */
+  Optional<CustomerEntity> getCustomer(int customerId);
+
+  Optional<OrderEntity> addOrder(OrderEntity orderEntity);
+
+  boolean orderIsExists(int orderId);
+
   int getOrderStatus(int orderId);
 
+  Page<OrderEntity> getAllOrdersByCustomerId(int customerId, Pageable pageable);
 }

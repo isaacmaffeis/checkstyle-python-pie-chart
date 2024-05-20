@@ -1,11 +1,14 @@
 package org.example.example.infrastructure.repository;
 
+import java.util.Optional;
 import org.example.example.domain.entities.CustomerEntity;
 import org.example.example.domain.entities.OrderEntity;
 import org.example.example.domain.ports.DataPort;
 import org.example.example.infrastructure.repository.repositories.CustomerRepository;
 import org.example.example.infrastructure.repository.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
 
@@ -42,8 +45,19 @@ public class JpaAdapter implements DataPort {
    * @return the saved CustomerEntity
    */
   @Override
-  public CustomerEntity saveCustomer(CustomerEntity customerEntity) {
-    return customerRepository.save(customerEntity);
+  public Optional<CustomerEntity> saveCustomer(CustomerEntity customerEntity)
+  {
+    return Optional.of(customerRepository.save(customerEntity));
+  }
+
+  @Override
+  public boolean customerIsExists(int customerId) {
+    return customerRepository.existsById(customerId);
+  }
+
+  @Override
+  public Optional<CustomerEntity> getCustomer(int customerId){
+    return customerRepository.findById(customerId);
   }
 
   /**
@@ -53,8 +67,13 @@ public class JpaAdapter implements DataPort {
    * @return the added OrderEntity
    */
   @Override
-  public OrderEntity addOrder(OrderEntity orderEntity) {
-    return orderRepository.save(orderEntity);
+  public Optional<OrderEntity> addOrder(OrderEntity orderEntity) {
+    return Optional.of(orderRepository.save(orderEntity));
+  }
+
+  @Override
+  public boolean orderIsExists(int orderId) {
+    return orderRepository.existsById(orderId);
   }
 
   /**
@@ -64,7 +83,12 @@ public class JpaAdapter implements DataPort {
    * @return the status of the order as an integer
    */
   @Override
-  public int getOrderStatus(int orderId) {
+  public int getOrderStatus(int  orderId) {
     return orderRepository.findOrderStatusById(orderId);
+  }
+
+  @Override
+  public Page<OrderEntity> getAllOrdersByCustomerId(int customerId,Pageable pageable){
+    return orderRepository.findByCustomerEntityId(customerId,pageable);
   }
 }

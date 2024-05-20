@@ -1,0 +1,8 @@
+Info,Count
+WhitespaceAroundCheck,5
+AvoidStarImportCheck,1
+WhitespaceAfterCheck,3
+NoWhitespaceBeforeCheck,1
+MethodParamPadCheck,1
+JavadocStyleCheck,2
+LeftCurlyCheck,1

@@ -13,6 +13,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 /**
  * Represents an order placed by a customer.
@@ -56,6 +57,7 @@ public class OrderEntity {
   /**
    * The timestamp when the order was created or last updated.
    */
+  @CreationTimestamp
   private Timestamp timestamp;
 
 }

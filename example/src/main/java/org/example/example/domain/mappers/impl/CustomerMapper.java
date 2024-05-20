@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomerMapper implements Mapper<CustomerEntity, CustomerDto> {
 
-  private final ModelMapper modelMapper;
+  private final ModelMapper modelMAPPER;
 
   /**
    * Constructs a new CustomerMapper with the specified {@link ModelMapper}.
@@ -25,7 +25,7 @@ public class CustomerMapper implements Mapper<CustomerEntity, CustomerDto> {
    */
   @Autowired
   public CustomerMapper(ModelMapper modelMapper) {
-    this.modelMapper = modelMapper;
+    this.modelMAPPER = modelMapper;
   }
 
   /**
@@ -36,18 +36,18 @@ public class CustomerMapper implements Mapper<CustomerEntity, CustomerDto> {
    */
   @Override
   public CustomerDto mapEntityToDto(CustomerEntity customerEntity) {
-    return modelMapper.map(customerEntity, CustomerDto.class);
+    return modelMAPPER.map(customerEntity, CustomerDto.class);
   }
 
-  /**
-   * Maps a {@link CustomerDto} to a {@link CustomerEntity}.
-   *
-   * @param customerDto the source DTO to be mapped
-   * @return the mapped CustomerEntity
-   */
+/**
+ * Maps a {@link CustomerDto} to a {@link CustomerEntity}.
+ *
+ * @param customerDto the source DTO to be mapped
+ * @return the mapped CustomerEntity
+ */
   @Override
   public CustomerEntity mapEntityFromDto(CustomerDto customerDto) {
-    return modelMapper.map(customerDto, CustomerEntity.class);
+    return modelMAPPER.map(customerDto, CustomerEntity.class);
   }
 
 }
