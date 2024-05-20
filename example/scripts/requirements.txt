@@ -1,0 +1,4 @@
+# Auto generated with:
+# pip install pipreqs
+# pipreqs
+matplotlib==3.8.4

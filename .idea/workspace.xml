@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d019922-fd35-49f3-8add-f4f4d1d078c0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/application/HttpController/Api.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/application/HttpController/ApiIF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/application/HttpController/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/config/JsonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/config/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/OrdersManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/dto/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/entities/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/mappers/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/ports/AppPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/ports/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/infrastructure/repository/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/entities/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/entities/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/mappers/impl/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/mappers/impl/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/ports/DataPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/domain/ports/DataPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/main/java/org/example/example/infrastructure/repository/JpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/infrastructure/repository/JpaAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/main/java/org/example/example/infrastructure/repository/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/main/java/org/example/example/infrastructure/repository/repositories/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/test/java/org/example/example/domain/ports/DataPortTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +35,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -42,34 +64,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "isaac",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart/rules/Google/custom",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.DataPortTests.testDataPort.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ExampleApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;isaac&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaac/Documents/GitHub/checkstyle-python-pie-chart/example/src/main/java/org/example/example/domain/dto&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\example\src\main\java\org\example\example\domain\dto" />
       <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\rules\Google\custom" />
       <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\checkstyle_python_pie_chart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\example\src\test\java\org\example\example\resources" />
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\example\src\test\java\org\example\example" />
+      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\example\src\test\java" />
       <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\rules\Sun\custom" />
       <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\rules\Google\custom" />
-      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\rules\Sun" />
-      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\src\scripts" />
-      <recent name="C:\Users\isaac\Documents\GitHub\checkstyle-python-pie-chart\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ExampleApplication">
+    <configuration name="DataPortTests.testDataPort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.example.domain.ports.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.example.domain.ports" />
+      <option name="MAIN_CLASS_NAME" value="org.example.example.domain.ports.DataPortTests" />
+      <option name="METHOD_NAME" value="testDataPort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.example.ExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DataPortTests.testDataPort" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -87,7 +148,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715291832908</updated>
-      <workItem from="1716036039132" duration="10407000" />
+      <workItem from="1716036039132" duration="10612000" />
+      <workItem from="1716051465246" duration="13687000" />
+      <workItem from="1716153049539" duration="1218000" />
+      <workItem from="1716189492072" duration="14556000" />
+      <workItem from="1716214945126" duration="2146000" />
+      <workItem from="1716217672413" duration="28000" />
+      <workItem from="1716217754225" duration="57000" />
     </task>
     <servers />
   </component>
