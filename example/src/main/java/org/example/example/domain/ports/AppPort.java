@@ -11,7 +11,7 @@ import org.springframework.data.domain.Pageable;
  * Implementations of this interface provide methods for adding new customers, retrieving customers and orders,
  * adding new orders, and retrieving order statuses.
  */
-public interface AppPort {
+public interface AppPort{
 
   /**
    * Adds a new customer to the database.
@@ -27,7 +27,7 @@ public interface AppPort {
    * //@param customerId the ID of the customer to retrieve
    * @return an Optional containing the CustomerDto if found, empty otherwise
    */
-  Optional<CustomerDto> getCustomer(int customerId);
+  Optional<CustomerDto> getCustomer(int customerId) ;
 
   /**
    * Adds a new order to the database
@@ -52,5 +52,5 @@ public interface AppPort {
    * //@param pageable   the pagination information
    * //@return an Optional containing a page of OrderDto objects if found, empty otherwise
    */
-  Optional<Page<OrderDto>> getAllOrderByCustomer(int customerId, Pageable pageable);
+  Optional<Page<OrderDto>> getAllOrderByCustomer(int customerId,Pageable pageable);
 }
